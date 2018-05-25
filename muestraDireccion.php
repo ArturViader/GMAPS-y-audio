@@ -15,7 +15,7 @@ function localitza()
 {
 
   var address = $('#address').val();
-var key = "AIzaSyAucVJJuxcrGbgfFWN-ZgMQRF3iz5ssQ8k";    
+var key = "INSERTATUAPIKEY";    
   $.ajax({
                     url:"https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=" + key,
                     dataType:'json',
@@ -58,7 +58,7 @@ width: 100%;
     
 </head>
 <body>
-<div id="pantalla" data-key="AIzaSyAucVJJuxcrGbgfFWN-ZgMQRF3iz5ssQ8k"
+<div id="pantalla" data-key="INSERTATUAPIKEY"
 data-control-zoom="true"
 data-control-type="true"
 data-control-scale="true"
@@ -75,7 +75,7 @@ data-zoom="14" role="map" class="gmaps">
     if(isset($_GET['address']))
     {
         extract($_GET);
-        $json = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.urlencode($address).'&key=AIzaSyAucVJJuxcrGbgfFWN-ZgMQRF3iz5ssQ8k');
+        $json = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.urlencode($address).'&key=INSERTATUAPIKEY');
        
         $obj = json_decode($json);
         
