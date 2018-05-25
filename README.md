@@ -5,7 +5,8 @@ Hacer sonar un audio por html5, o hacer sonar otro, o poner ambos reproductores.
 Mostrar 1 punto en un mapa con gmaps.
 Mostrar 3 puntos en un mapa con gmaps.
 Mostrar en el mapa una dirección buscada con un formulario.
-Se consulta la geolocalización a google por php usando api key.
+Se consulta la geolocalización a google usando api key. Esto se realiza desde un PHP.
+Está medio programar el intento de realizar lo mismo desde JS, aunque el mapa de GMAPS no se refrescaba. Quizás sería mejor esto con otro código.
 Se debe poner una api key válida en el código.
 
 gMap3 http://gmap3.net
